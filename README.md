@@ -1,1 +1,1 @@
-# projetoLojaDeGames
+# minhaLojaDeGames

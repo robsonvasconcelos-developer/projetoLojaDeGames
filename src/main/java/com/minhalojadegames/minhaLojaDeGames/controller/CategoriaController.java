@@ -45,10 +45,10 @@ public class CategoriaController {
 				.orElse(ResponseEntity.notFound().build()); 
 	}
 	
-	// findByDescricaoCategoria ?????????
-	@GetMapping("/game/{game}") //Diferente do ID anterior, E gerado um SUB Caminho, para nao gerar conflito!!
+	// findByDescricaoCategoria 
+	@GetMapping("/game/{game}")
 	public ResponseEntity<List<Categoria>> GetByGame (@PathVariable String game){
-		return ResponseEntity.ok(repository.findAllByGameContainingIgnoreCase(game)); // na URL na hora de pesquisar no Postman, ele Aceita com letra maiuscula ou minuscula!!!
+		return ResponseEntity.ok(repository.findAllByGameContainingIgnoreCase(game));
 	}
 	
 	

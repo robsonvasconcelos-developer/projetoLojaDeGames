@@ -23,7 +23,7 @@ import com.sun.istack.NotNull;
 @Table(name = "categoria")
 public class Categoria {
 	
-	//Anotacao que Gera o Automaticamente o ID!!!
+	//Anotacao que Gera o Automaticamente o ID=
 	
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY ) 
@@ -31,10 +31,10 @@ private long id;
 
 @NotNull
 @Size(min = 1, max = 200)
-private String console; //Anotacao de @NotNull para que o Usuario, nao se esqueca do Titulo!!
+private String console; 
 
 @NotNull
-@Size(min = 1, max = 255) // "()" aqui dentro foi definido o Parametro de CARACTERES!!
+@Size(min = 1, max = 255) 
 private String game;
 
 
@@ -73,15 +73,7 @@ public void setGame(String game) {
 
 
 
-//Relacionamento com a Tabela 2, Pendente??????
 
-/*
- * 	//Adicionando Getters e Setters para TEMA "private Tema tema;"!
-@ManyToOne         ////Criando um RELACIONAMENTO das tabelas Postagem e Tema!!
-@JsonIgnoreProperties("postagem")   // Escrever ate @JsonIg + Crtl + space =- primeira opcao!   /// No parametro dentro de () o que ira IGNORAR dentro de postagem da List ARRAY!! Como string, para nao ter conflito de INFOR!
- 
- ATENCAO : Nao, precisa de CHAVE estrangeira!!!! 
- */
 
 
 
